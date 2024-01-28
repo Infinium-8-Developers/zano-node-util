@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018 Zano Project
+// Copyright (c) 2023-2024 Infinium Developers
 // Copyright (c) 2014-2018 The Louisdor Project
 // Copyright (c) 2012-2013 The Cryptonote developers
 // Copyright (c) 2012-2013 The Boolberry developers
@@ -26,19 +26,16 @@ using namespace epee;
 
 #include "miner.h"
 
-
-
 namespace currency
 {
 
   namespace
   {
-    const command_line::arg_descriptor<std::string>   arg_extra_messages =     {"extra-messages-file", "Specify file for extra messages to include into coinbase transactions", "", true};
-    const command_line::arg_descriptor<std::string>   arg_start_mining =       {"start-mining", "Specify wallet address to mining for", "", true};
-    const command_line::arg_descriptor<uint32_t>      arg_mining_threads =     {"mining-threads", "Specify mining threads count", 0, true};
-    const command_line::arg_descriptor<std::string>   arg_block_template_extra_text = { "miner-text-info", "Set block extra text info", "", true };
+    const command_line::arg_descriptor<std::string>   arg_extra_messages      ("extra-messages-file", "Specify file for extra messages to include into coinbase transactions");
+    const command_line::arg_descriptor<std::string>   arg_start_mining        ("start-mining", "Specify wallet address to mining for");
+    const command_line::arg_descriptor<uint32_t>      arg_mining_threads      ("mining-threads", "Specify mining threads count");
+    const command_line::arg_descriptor<std::string>   arg_block_template_extra_text  ( "miner-text-info", "Set block extra text info");
   }
-
 
   miner::miner(i_miner_handler* phandler, blockchain_storage& bc):m_stop(1),
     //m_bc(bc),

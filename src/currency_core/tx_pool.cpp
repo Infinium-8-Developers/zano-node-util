@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018 Zano Project
+// Copyright (c) 2023-2024 Infinium Developers
 // Copyright (c) 2014-2018 The Louisdor Project
 // Copyright (c) 2012-2013 The Cryptonote developers
 // Distributed under the MIT/X11 software license, see the accompanying
@@ -666,7 +666,7 @@ namespace currency
   bool tx_memory_pool::force_relay_pool() const
   {
     LOG_PRINT_GREEN("Preparing relay message...", LOG_LEVEL_0);
-    NOTIFY_NEW_TRANSACTIONS::request r = AUTO_VAL_INIT(r);
+    NOTIFY_OR_INVOKE_NEW_TRANSACTIONS::request r = AUTO_VAL_INIT(r);
 
     m_db_transactions.enumerate_items([&](uint64_t i, const crypto::hash& k, const tx_details& v)
     {

@@ -1,8 +1,6 @@
-// Copyright (c) 2018-2019 Zano Project
+// Copyright (c) 2023-2024 Infinium Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-
 
 #include "currency_format_utils_blocks.h"
 #include "serialization/serialization.h"

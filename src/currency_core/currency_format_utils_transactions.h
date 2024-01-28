@@ -1,16 +1,14 @@
-// Copyright (c) 2018-2019 Zano Project
+// Copyright (c) 2023-2024 Infinium Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #pragma once
-
 
 #include "include_base_utils.h"
 #include "crypto/crypto.h"
 #include "currency_core/currency_basic.h"
 #include "currency_protocol/blobdatatype.h"
 #include "currency_core/account.h"
-
 
 namespace currency
 {

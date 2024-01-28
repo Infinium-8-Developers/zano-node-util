@@ -1,4 +1,4 @@
-// Copyright (c) 2018-2019 Zano Project
+// Copyright (c) 2023-2024 Infinium Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -129,6 +129,7 @@ namespace currency
     }
     return found;
   }
+  //---------------------------------------------------------------
   inline
   const txin_to_key& get_to_key_input_from_txin_v(const txin_v& in_v)
   {

@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018 Zano Project
+// Copyright (c) 2023-2024 Infinium Developers
 // Copyright (c) 2014-2018 The Louisdor Project
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -32,6 +32,7 @@ namespace bc_services
     std::string payment_types;      // []money accept type(bank transaction, internet money, cash, etc)
     std::string deal_option;        // []full amount, by parts
     std::string category;           // []
+    std::string preview_url;        // []
     uint8_t expiration_time;        // n-days
     //-----------------
 
@@ -50,6 +51,7 @@ namespace bc_services
       KV_SERIALIZE_N(deal_option, "do")
       KV_SERIALIZE_N(category, "cat")
       KV_SERIALIZE_N(expiration_time, "et")
+      KV_SERIALIZE_N(preview_url, "url")
     END_KV_SERIALIZE_MAP()
   };
 

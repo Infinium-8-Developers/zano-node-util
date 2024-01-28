@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018 Zano Project
+// Copyright (c) 2023-2024 Infinium Developers
 // Copyright (c) 2014-2018 The Louisdor Project
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -23,9 +23,9 @@ struct genesis_tx_dictionary_entry {
 #pragma pack(pop)
 
 #ifndef TESTNET
-extern const genesis_tx_dictionary_entry ggenesis_dict[26];
+extern const genesis_tx_dictionary_entry ggenesis_dict[1];
 #else
-extern const genesis_tx_dictionary_entry ggenesis_dict[5];
+extern const genesis_tx_dictionary_entry ggenesis_dict[1];
 #endif
 
 extern const crypto::public_key ggenesis_tx_pub_key;

@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018 Zano Project
+// Copyright (c) 2023-2024 Infinium Developers
 // Copyright (c) 2014-2018 The Louisdor Project
 // Copyright (c) 2012-2013 The Boolberry developers
 // Distributed under the MIT/X11 software license, see the accompanying
@@ -17,7 +17,6 @@
 
 namespace bc_services
 {
-
 
   struct offer_id
   {
@@ -160,9 +159,6 @@ namespace bc_services
     }
   }
 
-
-
-
 #define OFFER_TYPE_PRIMARY_TO_TARGET        0
 #define OFFER_TYPE_TARGET_TO_PRIMARY        1
 #define OFFER_TYPE_GOODS_TO_PRIMARY         2
@@ -174,7 +170,6 @@ namespace bc_services
 #define OFFER_TYPE_MASK_PRIMARY_TO_GOODS    0x00000008
 
 #define OFFER_TYPE_UNDEFINED                255
-
 
   struct offer_details_ex_with_hash : public offer_details_ex
   {

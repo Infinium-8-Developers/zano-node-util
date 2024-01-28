@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018 Zano Project
+// Copyright (c) 2023-2024 Infinium Developers
 // Copyright (c) 2014-2018 The Louisdor Project
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -13,7 +13,7 @@
 #include "storages/portable_storage_template_helper.h"
 
 
-command_line::arg_descriptor<bool>      arg_market_disable = { "disable-market", "Start GUI with market service disabled", false, true };
+command_line::arg_descriptor<bool>      arg_market_disable  ( "disable-market", "Start GUI with market service disabled");
 
 
 namespace bc_services
