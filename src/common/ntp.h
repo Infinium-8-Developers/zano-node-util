@@ -1,4 +1,4 @@
-// Copyright (c) 2019 Zano Project
+// Copyright (c) 2023-2024 Infinium Developers
 
 #pragma once
 #include <cstdint>

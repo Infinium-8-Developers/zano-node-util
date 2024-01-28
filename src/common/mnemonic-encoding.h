@@ -1,4 +1,4 @@
-// Copyright (c) 2014, The Monero Project
+// Copyright (c) 2023-2024 Infinium Developers
 // 
 // All rights reserved.
 // 
